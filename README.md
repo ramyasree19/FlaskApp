@@ -39,3 +39,16 @@ Now localhost:3000 ----> connection refused for redis #we were using local redis
 .env 
 HOST = host.docker.internal ==>should work fine 
 Not the professional way still, We are going to do one by one.!
+
+Now We are going add docker-compose.yml -- to run multiple container at the same time.
+where u have multiple services 1. app 2. REdis 
+App is created using the current Dockerfile using .
+Redis is crerated using built-in redis image
+Total 2 containers get created. 
+
+
+
+Docker compose up -d
+docker compose stop app
+docker compose start app
+docker compose down - stop containers
