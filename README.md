@@ -144,6 +144,9 @@ docker compose start app
 
 # Stop and remove all containers created by compose
 docker compose down
+
+# To check Config of multiple services
+docker compose config
 ```
 
 With this compose file, the app can use `redis` (the service name) as the Redis hostname.
