@@ -170,5 +170,5 @@ With this compose file, the app can use `redis` (the service name) as the Redis 
 ## Contributing
 Contributions welcome. Please open an issue or PR with changes. Include how to run and test.
 
-## License
-Add a license file (e.g., MIT) or document the license here.
+
+<img width="459" height="296" alt="image" src="https://github.com/user-attachments/assets/f82d625b-e4e4-43fd-8168-68bc25043bc8" />
