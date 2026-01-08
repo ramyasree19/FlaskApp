@@ -33,3 +33,9 @@ docker run -p 3000:8000 --name flaskapp flaskapp:v1
 # container port =8000
 
 Now localhost:3000 ----> connection refused for redis #we were using local redis db which is install in our local but docker container is isolated one.
+
+
+-----
+.env 
+HOST = host.docker.internal ==>should work fine 
+Not the professional way still, We are going to do one by one.!
