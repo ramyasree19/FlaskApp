@@ -16,8 +16,8 @@ services:
     container_name: redis-db
     command: ["redis-server", "--appendonly", "yes"]
     volumes:
-  	- redis_data:/data
+      - redis_data:/data
 
-  volumes:
-    redis_data:
+volumes:
+  redis_data:
 
