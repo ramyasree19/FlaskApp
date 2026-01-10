@@ -151,6 +151,13 @@ docker compose config
 
 With this compose file, the app can use `redis` (the service name) as the Redis hostname.
 
+Lets add nginx service, to handle web facing by staying infront of FlaskApp
+sudo nano /etc/hosts
+Add:
+127.0.0.1   myapp.local
+
+So we can directly connect to APP by using **myapp.local**
+
 ## Troubleshooting
 
 - Connection refused for Redis inside container:
