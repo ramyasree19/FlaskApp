@@ -19,11 +19,11 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build and push app image
         run: |
           docker compose build app
-          docker tag flaskapp_app:latest ${{ secrets.DOCKERHUB_USERNAME }}/flaskapp:latest
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/flaskapp:latest
+          docker tag flaskapp_app:latest ${{ secrets.DOCKER_USERNAME }}/flaskapp:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/flaskapp:latest
