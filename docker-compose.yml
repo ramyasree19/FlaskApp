@@ -2,7 +2,7 @@ version: "3.8"
 services:
   app:
     build: .
-    image: ${{ secrets.DOCKER_USERNAME }}/flaskapp:latest
+    image: flaskapp:latest
     env_file:
       - .env
     environment:
