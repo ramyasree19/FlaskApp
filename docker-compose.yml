@@ -2,7 +2,7 @@ version: "3.8"
 services:
   app:
     build: .
-    image: flaskapp:latest
+    image: flaskapp_app:latest
     env_file:
       - .env
     environment:
